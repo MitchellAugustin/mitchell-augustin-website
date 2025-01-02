@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "template.dwt" -->
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "title" -->
+
+<title>Downloads | Spiral</title>
+
+<!-- #EndEditable -->
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" 
+      type="image/png" 
+      href="images/spiral-logo.png"/>
+      
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//oneone.augustin.tech/analytics/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '5']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+</head>
+
+<body>
+<article>
+<header>
+<table>
+	<tr>
+		<td style="width: 135px"><h1>
+		<img alt="Spiral Logo" height="100" src="images/spiral-logo.png" width="108" /></h1></td>
+		<td>
+		<h1 class="auto-style1">Spiral</h1>
+		</td>
+	</tr>
+</table>
+<aside><a href="index.html">Home</a> | <a href="manual.html">Manual</a> | <a href="downloads.html">Downloads</a> | <a href="contribute.html">Contribute</a></aside>
+</header>
+<!-- #BeginEditable "body" -->
+
+<h2>Installing Spiral</h2>
+<ul>
+<li>Windows: Extract the contents of Spiral_[version].zip to wherever you would like to store it and run Spiral.exe. (If you want, you can create a shortcut to this binary and add it to your start menu folder for easy access.)</li>
+<li>Linux: Using your preferred package manager, install the packages qt5-default and qtdeclarative5-dev. Then, extract Spiral_[version].tar.gz to the directory where you wish to install it and run the binary file named Spiral within your Spiral installation directory to launch Spiral. (If you want, you can run install.sh to create a desktop entry that points to this binary within your DE for easy access.) Note: If you are using a GTK-themed Desktop Environment, you will also want to install qt5-styleplugins (qt5-style-plugins on Debian) package in order for your theme to work properly with Spiral. (Additional note: If you are using a dark theme on GNOME and some parts of Spiral are brighter than you would like, I would recommend using the <a href="https://github.com/FedoraQt/adwaita-qt" target="_blank">Adwaita QT</a> theme to launch Spiral.)</li>
+</ul>
+<h2>Note</h2>
+<p>Since my main goal with Spiral was to build a functional enough free-form note-taking program to allow me to switch to a Linux distro as my primary work OS, its feature set is very minimal right now and I have not done much testing to ensure that everything will work properly all the time. There is currently no version control system built in to Spiral, so </p><h2><b>I would advise you to back up your notebooks regularly if you plan to use Spiral as your primary note-taking application. Use Spiral at your own risk.</b></h2>
+<ul>
+  <li><b>VERY IMPORTANT NOTE:</b> Spiral is not optimized for storage on network file systems or cloud drive instances. Storing your .snb files on desktop cloud drive instances (such as the Google Drive/OneDrive desktop apps) is not supported and may result in data loss.</li>
+</ul>
+<br>
+<h2>Downloads</h2>
+	<ul>
+    <li>Spiral Release 1.7 (Latest) | 10/18/2022 | <a href="versions/spiral-linux_1.7-1.deb" target="_blank">Linux (DEB)</a> | <a href="https://aur.archlinux.org/packages/spiral-notebook-bin/" target="_blank">Linux (AUR)</a> | <a href="versions/spiral-linux-1.7.tar.gz">Linux (Tarball)</a> | <a href="versions/Spiral_Release_1.7_Windows.zip">Windows</a> (Note: Requires QT v. >= 5.9)</li>
+    <li>Spiral - Git (Experimental) | Rolling Release | <a href="versions/spiral-git-install.sh">Linux</a></li>
+    <ul><li>If you'd like to try out some of Spiral's latest features before they are officially released in the next stable binary, you can use this script to build and install Spiral from source directly. Running spiral-git-install.sh will install Spiral to your home directory (~/spiral-install) along with a corresponding desktop entry. (You will need to install cmake to use this method.)</li></ul>
+    </li>
+    </ul>
+	<ul>
+    <li><a href="archive.html">Previous Versions</a></li>
+    </ul>
+    
+
+<!-- #EndEditable -->
+	<br>
+	<br>
+	<footer>© Copyright 2019-2023 - Spiral was written by Mitchell Augustin and is licensed under the
+		<a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank">GNU General Public License v2</a>.</footer>
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

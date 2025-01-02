@@ -1,0 +1,7 @@
+{
+    "autosave": true,
+    "graceful_exit": true,
+    "open_notebooks": [
+        "Demo.snb"
+    ]
+}

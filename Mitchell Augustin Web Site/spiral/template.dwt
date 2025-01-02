@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<!-- #BeginEditable "title" -->
+
+<!-- #EndEditable -->
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="icon" 
+      type="image/png" 
+      href="images/spiral-logo.png"/>
+      
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//oneone.augustin.tech/analytics/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '5']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+</head>
+
+<body>
+<article>
+<header>
+<table>
+	<tr>
+		<td style="width: 135px"><h1>
+		<img alt="Spiral Logo" height="100" src="images/spiral-logo.png" width="108" /></h1></td>
+		<td>
+		<h1 class="auto-style1">Spiral</h1>
+		</td>
+	</tr>
+</table>
+<aside><a href="index.html">Home</a> | <a href="manual.html">Manual</a> | <a href="downloads.html">Downloads</a> | <a href="contribute.html">Contribute</a></aside>
+</header>
+<!-- #BeginEditable "body" -->
+
+<!-- #EndEditable -->
+	<br>
+	<br>
+	<footer>© Copyright 2019-2022 - Spiral was written by Mitchell Augustin and is licensed under the 
+		<a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3</a>.</footer>
+</body>
+
+</html>

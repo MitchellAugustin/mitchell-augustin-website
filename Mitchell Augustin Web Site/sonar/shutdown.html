@@ -1,0 +1,134 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sonar is shutting down</title>
+<link href="styles/stylev2.css" rel="stylesheet" type="text/css">
+<link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+<script type="text/javascript">
+function init() {
+    var large = true;
+  window.addEventListener('scroll', function(e){
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = 200,
+        header = document.querySelector("header");
+
+    if (distanceY > shrinkOn) {
+    	if(large == true){
+    	      header.setAttribute("class","smaller");
+    	      var anchor = document.createElement("a");
+    	      anchor.setAttribute('id', 'logo-large');
+              anchor.setAttribute('href', 'https://sonarapp.xyz:8443/SonarServer/');
+    	      var image = document.createElement("img");
+	  		  image.setAttribute('src', 'https://sonarapp.xyz:8443/SonarServer/images/favicon.png');
+	  		  image.setAttribute('alt', 'Sonar');
+	  		  image.setAttribute('id', 'logo-large');
+	  		  image.setAttribute('height', '50px');
+	  		  image.setAttribute('width', '50px');
+
+              var largeLogo = document.getElementById("logo-large");
+        	  document.getElementById("logo").removeChild(largeLogo);
+        	  anchor.appendChild(image);
+        	  document.getElementById("logo").appendChild(anchor);
+        	  large = false;
+    	}
+    } else {
+        header.removeAttribute("class");
+        if(large == false){
+              var largeLogo = document.getElementById("logo-large");
+        	  document.getElementById("logo").removeChild(largeLogo);
+
+              var logoHolder = document.getElementById("logo");
+              var anchor = document.createElement("a");
+              anchor.setAttribute('id', 'logo-large');
+              anchor.setAttribute('href', 'https://sonarapp.xyz:8443/SonarServer/');
+	  		  var image= document.createElement("img");
+	  		  image.setAttribute('src', 'https://sonarapp.xyz:8443/SonarServer/images/sonar.png');
+	  		  image.setAttribute('alt', 'Sonar');
+	  		  image.setAttribute('height', '120px');
+	  		  image.setAttribute('width', '300px');
+	  		  anchor.appendChild(image);
+	  		  logoHolder.appendChild(anchor);
+
+			  large = true;
+        }
+    }
+  });
+}
+window.onload = init();</script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="772684206001-2ait3rvvdk04rg23km6e592i7cg3e3m4.apps.googleusercontent.com">
+<script>
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail());
+  var id_token = googleUser.getAuthResponse().id_token;
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://sonarapp.xyz:8443/SonarServer/sonar/login/edit');
+  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  xhr.onload = function() {
+    console.log('Signed in as: ' + xhr.responseText);
+	document.write(xhr.responseText);
+  };
+  xhr.send('idtoken=' + id_token);
+  };
+
+
+</script>
+<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+
+</head>
+
+<body>
+<header>
+	<div class="container clearfix">
+		<h1 id="logo">
+			<a id="logo-large" href="https://sonarapp.xyz:8443/SonarServer/"><img src="images/sonar.png" alt="Sonar" height="120" width="300"></a>
+		</h1>
+		
+		<nav>
+			<a href="https://sonarapp.xyz:8443/SonarServer/mywall.html">My pings</a>
+			<a href="https://sonarapp.xyz:8443/SonarServer/inbox.html">Inbox</a>
+			<a href="https://sonarapp.xyz:8443/SonarServer/about.html">About Sonar</a>
+			<a href="https://sonarapp.xyz:8443/SonarServer/search.html">Search for Users</a>
+		</nav>
+	</div>
+</header>
+
+<main>
+
+	<br>
+   	<br>
+   	<br>
+   	<br>
+   	<br>
+   	<br>
+   	<br>
+
+<h1>Sonar is shutting down</h1>
+<p>On May 6th, 2017, Sonar will be shutting down permanently.</p>
+<h2>Why am I ending Sonar?</h2>
+<p>Sonar was a fun project. I enjoyed listening to the types of recordings that others posted and talking to people in live calls. However, Sonar really never became any more than that - a fun, experimental project. Although I am proud of designing an effective social network, we were missing one key feature of such a network the entire time - a large user base. Throughout the entire lifespan of Sonar, we only acquired around 30 unique users - not nearly enough to build a community out of. Additionally, there were a number of factors that impeded on Sonar's growth, notably other services that offered similar features. Finally, I have a limited amount of server power. I have been working on some other projects lately that will require the full capacity that my server can offer, and I will need to close Sonar to accommodate for them.</p>
+<h2>Can I save my pings?</h2>
+<p>Yes. Any of your pings can be saved before the shutdown from our website. Simply log in and right click any ping that you want to save, and then select "save audio as."</p>
+<h2>Are there any services that I can use in place of Sonar?</h2>
+<p>As a matter of fact, there are several services that you can use for audio hosting and live chats. If you need a place to host your sound files, I would recommend <a href="http://soundcloud.com" target="_blank">Soundcloud</a>. If you want to enter live chats and converse with people with similar interests, I would advise that you take a look at <a href="http://www.omegle.com/" target="_blank">Omegle</a>.</p>
+<h2>Thank You</h2>
+<p>I'd like to thank everyone who used and helped with Sonar. This project could not have existed at all without you. If you are interested in any of my other current or upcoming projects, feel free to visit my personal website at <a href="http://mitchellaugustin.com" target="_blank">mitchellaugustin.com</a> or follow me on <a href="http://twitter.com/TechyMitch" target="_blank">Twitter</a>.</p>
+
+</main>
+</body>
+<footer>© Copyright 2016-2017 Mitchell Augustin • <a href="https://sonarapp.xyz:8443/SonarServer/tos.html">Terms of Service</a> • <a href="https://sonarapp.xyz:8443/SonarServer/privacy.html">Privacy Policy</a> • <a href="https://sonarapp.xyz:8443/SonarServer/rules.html">Rules</a> <br>Google Play and the Google Play logo are trademarks of Google Inc.</footer>
+
+</html>

@@ -1,0 +1,9 @@
+{
+    "autosave": true,
+    "browser_width": 268,
+    "graceful_exit": true,
+    "open_notebooks": [
+        "Demo.snb"
+    ],
+    "theme": "THEME_SYSTEM"
+}
